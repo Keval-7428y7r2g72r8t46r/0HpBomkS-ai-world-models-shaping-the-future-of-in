@@ -57,22 +57,6 @@ export default function Home() {
           </CardContent>
         </Card>
       </section>
-
-      {PROJECT_DATA.generatedImages.length > 0 && (
-        <section className="space-y-6">
-          <h2 className="text-2xl font-bold">Visual Concept Gallery</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {PROJECT_DATA.generatedImages.map((img) => (
-              <div key={img.id} className="group relative aspect-video rounded-xl overflow-hidden border">
-                <img src={img.url} alt={img.prompt} className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
-                  <p className="text-xs text-white">{img.prompt}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
     </div>
   );
 }
