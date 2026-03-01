@@ -1,5 +1,5 @@
 import { PROJECT_DATA } from "@/lib/data";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Beaker, CheckCircle2, FileText, Image as ImageIcon } from "lucide-react";
 
